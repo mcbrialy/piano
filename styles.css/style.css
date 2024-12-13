@@ -4,10 +4,11 @@ h1 {
     font-family: "Marzaki Text";
 }
 
-#content {
+#content, #content-p2, #content-p3 {
     background-color: black;
     max-width: 100%;
     color: white;
+    margin: 0 auto;
 }
 body {
     margin: 0 auto;
@@ -131,8 +132,7 @@ nav a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-
-#httyd-hero {
+#httyd-hero{
     display: grid;
     grid-template: 1fr / 1fr;
 }
@@ -142,7 +142,7 @@ nav a:hover {
     background-color: black;
     max-height: 1080px;
 }
-#httyd-hero-img {
+#httyd-hero-img{
     width: 100%;
     grid-row: 1/2;
 }
@@ -153,10 +153,36 @@ nav a:hover {
     font-size: 2em;
     text-align: center;
 }
+#waltz-hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr;
+    background-color: #222725;
+}
+#waltz-hero-box {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#waltz-hero-img {
+    max-height: 1080px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#waltz-hero-msg {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 2em;
+}
 #sub1-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr, 1, 1fr, 2fr, 1fr, 1.5fr;
+    grid-template-rows: .75fr 2fr 1fr 1fr .75fr .5fr;
+}
+#sub2-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: .3fr 2fr 1fr 1fr .75fr .5fr;
 }
 .subpage-p1 {
     grid-column: 1/7;
@@ -165,10 +191,18 @@ nav a:hover {
 .subpage-img-box {
     grid-column: 1/7;
     grid-row: 2/3;
+    background-color: #222725;
+}
+.subpage2-img-box {
+    grid-column: 2/6;
+    grid-row: 2/3;
 }
 .subpage-img {
     width: 100%;
     padding-bottom: 20px;
+}
+.subpage2-img {
+    width: 100%;
 }
 .vid {
     grid-column: 1/5;
@@ -178,11 +212,7 @@ nav a:hover {
     grid-column: 5/7;
     grid-row: 3/4;
     text-align: center;
-    font-size: 2em;
-}
-.procon-box {
-    grid-column: 1/7;
-    grid-row: 5/6;
+    font-size: 1.5em;
 }
 .pros {
     grid-column: 1/4;
