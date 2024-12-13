@@ -182,7 +182,7 @@ nav a:hover {
 #sub2-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: .3fr 2fr 1fr 1fr .75fr .5fr;
+    grid-template-rows: .3fr 1.75fr 1fr 1fr .75fr .5fr;
 }
 .subpage-p1 {
     grid-column: 1/7;
@@ -192,16 +192,9 @@ nav a:hover {
     grid-column: 1/7;
     grid-row: 2/3;
 }
-.subpage2-img-box {
-    grid-column: 2/6;
-    grid-row: 2/3;
-}
 .subpage-img {
     width: 100%;
-    padding-bottom: 20px;
-}
-.subpage2-img {
-    width: 100%;
+    padding-bottom: 10px;
 }
 .vid {
     grid-column: 1/5;
