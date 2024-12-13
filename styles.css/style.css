@@ -155,7 +155,7 @@ nav a:hover {
 }
 #waltz-hero {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3 1fr);
     grid-template-rows: 3fr 1fr;
     background-color: #222725;
 }
@@ -176,12 +176,12 @@ nav a:hover {
 }
 #sub1-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6 1fr);
     grid-template-rows: .75fr 2fr 1fr 1fr .75fr .5fr;
 }
 #sub2-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6 1fr);
     grid-template-rows: .3fr 2fr 1fr 1fr .75fr .5fr;
 }
 .subpage-p1 {
